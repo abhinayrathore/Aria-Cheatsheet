@@ -6,7 +6,7 @@
     iFrame,
     triggerElem;
 
-  modalWrapper.innerHTML = '<link rel=stylesheet href="c/modal.css">' +
+  modalWrapper.innerHTML = '<link rel=stylesheet href="c/modal.min.css">' +
     '<div class=modal id=modal tabindex=-1 role=dialog>' +
       '<div class="modal-dialog" role="document">' +
         '<div class="modal-content">' +
@@ -14,7 +14,7 @@
             '<button type=button class="modal-close" aria-label="Close"><span aria-hidden="true" class="modal-close">&times;</span></button>' +
             '<h4 id="modal-title">Deal</h4>' +
           '</div>' +
-          '<div class="modal-body"><iframe id="iframe" sandbox="allow-forms allow-popups"></iframe></div>' +
+          '<div class="modal-body"><iframe id="iframe" sandbox="allow-forms allow-popups" src="loading.htm"></iframe></div>' +
         '</div>' +
       '</div>' +
     '</div>';
@@ -60,7 +60,6 @@
   // Open modal and set focus
   function openModal (title, url) {
     modalTitle.innerHTML = title;
-    //iFrame.src = 'proxy.php?url=' + encodeURIComponent(url);
     iFrame.src = url;
     modal.style.display = 'block';
     modal.focus();
@@ -74,7 +73,7 @@
 
   function closeModal() {
     modalOpen = false;
-    iFrame.src = '';
+    iFrame.src = 'loading.htm';
     modal.style.display = 'none';
     D.body.className = '';
     
