@@ -1,0 +1,65 @@
+body{
+  font-family: Arial, sans-serif;
+	margin: 0;
+}
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+table {
+	width: 100%;
+	border: 1px solid #ccc;
+}
+th, td {
+	font-size: 16px;
+	padding: 5px;
+	vertical-align: top;
+}
+tr {
+	background-color: #ddd;
+}
+tr:nth-child(even) {
+	background-color: #fff;
+}
+th, caption {
+	text-align: left;
+}
+th {
+	min-width: 15%;
+}
+caption {
+	font-style: italic;
+	font-size: 14px;
+	color: #666;
+	padding-bottom: 5px;
+}
+h1 {
+	font-size: 36px;
+	text-align: center;
+}
+h2 {
+	font-size: 24px;
+	margin-top: 20px;
+	padding: 3px 5px;
+	background-color: #555;
+	color: #fff;
+	border-radius: 2px;
+}
+h3 {
+	font-size: 20px;
+	margin: 20px 0 5px 0;
+}
+main {
+	width: 1200px;
+	max-width: 100%;
+	margin: 0 auto;
+}
+.footnote {
+	font-size: 12px;
+	text-align: center;
+	font-style: italic;
+	color: #aaa;
+}
