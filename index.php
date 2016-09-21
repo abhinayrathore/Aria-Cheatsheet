@@ -121,6 +121,6 @@ function getContent($URL, $MAP) {
 			<section><h2>States and Properties</h2><?=$STATES_PROPS_HMTL;?></section>
 			<p class=footnote>Last Updated: <?=$LAST_UPDATED;?></p>
 		</main>
-		<script src="j/main.js"></script>
+		<script src="j/m.js"></script>
 	</body>
 </html>
